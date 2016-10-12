@@ -1,0 +1,57 @@
+body, .backdrop-blur::before {
+	background: url(background.jpg) fixed;
+	background-position: center;
+	background-size: cover;
+}
+body {
+	font-family: "Roboto";
+	filter: hue-rotate(5deg);
+}
+.spacer {
+	height: 2em;
+}
+#main-container {
+	margin-top: 20%;
+	margin-left: calc(50% - 8em);
+	text-align: center;
+	color: #202020;
+	width: 16em;
+	padding-bottom: 4em;
+}
+.title {
+	color: #efefef;
+	font-size: 32px;
+}
+#search-bar {
+	width: 16em;
+	height: 2em;
+	padding: 0;
+	border: none;
+}
+#search-bar-input {
+	margin-left: 0.8em;
+	width: 18em;
+	height: 2em;
+	line-height: 2em;
+	padding-top: 2px;
+	border: none;
+	background: transparent;
+	color: #202020;
+	box-sizing: padding-box;
+}
+.backdrop-blur::before {
+    content: '';
+    position: relative;
+    z-index: -2;
+    display: block;
+    width: 15.9em;
+    height: 2em;
+    filter: blur(2px) contrast(0.6) brightness(1.35) saturate(0.75);
+}
+#search-bar-border {
+	border: 1px solid #202020;
+	position: relative;
+	z-index: -1;
+    top: -1.75em;
+    border-radius: 1px;
+}
