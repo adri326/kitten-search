@@ -29,8 +29,8 @@ body {
 	border: none;
 }
 #search-bar-input {
-	margin-left: 0.8em;
-	width: 18em;
+	margin-left: 0.5em;
+	width: 18.3em;
 	height: 2em;
 	line-height: 2em;
 	padding-top: 2px;
@@ -52,6 +52,6 @@ body {
 	border: 1px solid #202020;
 	position: relative;
 	z-index: -1;
-    top: -1.75em;
+    top: -1.85em;
     border-radius: 1px;
 }
