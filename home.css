@@ -39,6 +39,9 @@ body {
 	color: #202020;
 	box-sizing: padding-box;
 }
+#search-bar-input:focus{
+    outline: none;
+}
 .backdrop-blur::before {
     content: '';
     position: relative;
