@@ -4,10 +4,18 @@
 		<title>Kitten Search!</title>
 		<link rel="stylesheet" href="home.css" />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:light">
+		<script>
+			var rnd = Math.floor(Math.random()*2.999+1);
+			document.write("<style>body, .backdrop-blur::before { background: url(background-"+rnd+".jpg) fixed; background-position: center; background-size: cover; } </style>");
+			
+			if (rnd>1) {
+				document.write("<style>.title { color: #202020; text-shadow: 0 0 2px #dfdfdf; }</style>");
+			}
+		</script>
 	</head>
-	<body id="back">
+	<body id="back" onload="loadKitten();">
 		<div id="main-container">
-			<span class="title">Kitten search!</span>
+			<span class="title" id="title">Kitten search!</span>
 			<div class="spacer"></div>
 			<form action="https://www.google.fr/search" method="GET">
 				<input type="text" id="search-bar-input" name="q" />
