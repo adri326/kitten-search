@@ -1,7 +1,5 @@
 body, .backdrop-blur::before {
-	background: url(background.jpg) fixed;
-	background-position: center;
-	background-size: cover;
+	
 }
 body {
 	font-family: "Roboto";
